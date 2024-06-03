@@ -1,7 +1,7 @@
 ![image](https://github.com/natalialamia/GRUPO-18--ISPC--CIENTIFICO-DE-DATOS--2024/assets/107369842/9dc38dd6-2a8c-4428-84db-bde32e47ca65)
 ![image](https://github.com/natalialamia/GRUPO-18--ISPC--CIENTIFICO-DE-DATOS--2024/assets/107369842/cb2a96a1-437c-4f42-a194-835e62a3e009)
 
-# PROYECTO INTEGRADOR TSCDIA - GRUPO 18 - Cohorte 2022
+# PROYECTO INTEGRADOR TSCDIA - GRUPO 18 -
 ## Integrantes:
 ### Viviana Farabollini
 ### Mariano Ledesma
