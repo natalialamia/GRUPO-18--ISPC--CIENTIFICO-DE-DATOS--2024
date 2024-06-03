@@ -51,26 +51,26 @@ Se construye una Red Neuronal Convolucional (CNN) con el objetivo de clasificar 
 
 ## Detalles del Modelo
 ### Definición del Modelo
-model = Sequential(): Crea un modelo secuencial, que es una pila lineal de capas.
-Capas Convolucionales y de Pooling
-model.add(Conv2D(64, kernel_size=(3, 3), strides=(2, 2), padding='same', activation='relu', input_shape=input_shape)): Añade una capa convolucional con 64 filtros, un tamaño de kernel de 3x3, un paso (stride) de 2x2, relleno 'same' (para mantener las dimensiones de la salida), función de activación ReLU y la forma de entrada especificada (150, 150, 3) (imágenes de 150x150 píxeles con 3 canales de color).
-model.add(Conv2D(128, kernel_size=(3, 3), strides=(2, 2), padding='same', activation='relu')): Añade una segunda capa convolucional con 128 filtros, y características similares a la primera capa.
-model.add(MaxPole 2D()): Añade una capa de max pooling para reducir la dimensionalidad espacial (dimensiones de las imágenes) tomando el máximo valor en una ventana de 2x2.
-model.add(Conv2D(256, kernel_size=(3, 3), strides=(2, 2), padding='same', activation='relu')): Añade una tercera capa convolucional con 256 filtros.
-model.add(Conv2D(512, kernel_size=(3, 3), strides=(2, 2), padding='same', activation='relu')): Añade una cuarta capa convolucional con 512 filtros.
-model.add(MaxPole 2D()): Añade otra capa de max pooling.
-Capa de Aplanamiento (Flattening)
-model.add(Flatten()): Aplana las salidas de la última capa de pooling en un vector de una dimensión, preparándolas para las capas densas (fully connected).
-Capas Densas (Fully Connected)
-model.add(Dropout(0.2)): Añade una capa de dropout con una tasa del 20% para prevenir el sobreajuste, apagando aleatoriamente el 20% de las neuronas en cada actualización durante el entrenamiento.
-model.add(Dense(1048, activation='relu')): Añade una capa densa con 1048 neuronas y activación ReLU.
-model.add(Dropout(0.2)): Añade otra capa de dropout con la misma tasa.
-model.add(Dense(len(class_names), activation='softmax')): Añade la capa de salida con un número de neuronas igual al número de clases (categorías de imágenes) y activación softmax para obtener probabilidades de clasificación.
+#### model = Sequential(): Crea un modelo secuencial, que es una pila lineal de capas.
+#### Capas Convolucionales y de Pooling
+#### model.add(Conv2D(64, kernel_size=(3, 3), strides=(2, 2), padding='same', activation='relu', input_shape=input_shape)): Añade una capa convolucional con 64 filtros, un tamaño de kernel de 3x3, un paso (stride) de 2x2, relleno 'same' (para mantener las dimensiones de la salida), función de activación ReLU y la forma de entrada especificada (150, 150, 3) (imágenes de 150x150 píxeles con 3 canales de color).
+#### model.add(Conv2D(128, kernel_size=(3, 3), strides=(2, 2), padding='same', activation='relu')): Añade una segunda capa convolucional con 128 filtros, y características similares a la primera capa.
+#### model.add(MaxPole 2D()): Añade una capa de max pooling para reducir la dimensionalidad espacial (dimensiones de las imágenes) tomando el máximo valor en una ventana de 2x2.
+#### model.add(Conv2D(256, kernel_size=(3, 3), strides=(2, 2), padding='same', activation='relu')): Añade una tercera capa convolucional con 256 filtros.
+#### model.add(Conv2D(512, kernel_size=(3, 3), strides=(2, 2), padding='same', activation='relu')): Añade una cuarta capa convolucional con 512 filtros.
+#### model.add(MaxPole 2D()): Añade otra capa de max pooling.
+## Capa de Aplanamiento (Flattening)
+#### model.add(Flatten()): Aplana las salidas de la última capa de pooling en un vector de una dimensión, preparándolas para las capas densas (fully connected).
+#### Capas Densas (Fully Connected)
+#### model.add(Dropout(0.2)): Añade una capa de dropout con una tasa del 20% para prevenir el sobreajuste, apagando aleatoriamente el 20% de las neuronas en cada actualización durante el entrenamiento.
+#### model.add(Dense(1048, activation='relu')): Añade una capa densa con 1048 neuronas y activación ReLU.
+#### model.add(Dropout(0.2)): Añade otra capa de dropout con la misma tasa.
+#### model.add(Dense(len(class_names), activation='softmax')): Añade la capa de salida con un número de neuronas igual al número de clases (categorías de imágenes) y activación softmax para obtener probabilidades de clasificación.
 
 ## 5. Compilación del Modelo
-model.compile(optimizer=Adam(), loss='categorical_crossentropy', metrics=['accuracy']): Compila el modelo usando el optimizador Adam, la función de pérdida categorical_crossentropy (adecuada para clasificación multiclase) y la métrica de precisión (accuracy).
+#### model.compile(optimizer=Adam(), loss='categorical_crossentropy', metrics=['accuracy']): Compila el modelo usando el optimizador Adam, la función de pérdida categorical_crossentropy (adecuada para clasificación multiclase) y la métrica de precisión (accuracy).
 Resumen del Modelo
-model.summary(): Imprime un resumen del modelo, mostrando las capas, sus formas de salida, y el número de parámetros entrenables.
+#### model.summary(): Imprime un resumen del modelo, mostrando las capas, sus formas de salida, y el número de parámetros entrenables.
 
 ### Entrenamiento del Modelo
 El modelo se entrenó durante 30 épocas con datos de entrenamiento y validación.
