@@ -2,7 +2,7 @@
 ![image](https://github.com/natalialamia/GRUPO-18--ISPC--CIENTIFICO-DE-DATOS--2024/assets/107369842/cb2a96a1-437c-4f42-a194-835e62a3e009)
 
 # PROYECTO INTEGRADOR TSCDIA - GRUPO 18 - Cohorte 2022
-##Integrantes:
+## Integrantes:
 ### Viviana Farabollini
 ### Mariano Ledesma
 ### Natalia Lamia
