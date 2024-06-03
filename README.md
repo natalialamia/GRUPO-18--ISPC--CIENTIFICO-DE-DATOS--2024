@@ -66,6 +66,7 @@ model.add(Dropout(0.2)): Añade una capa de dropout con una tasa del 20% para pr
 model.add(Dense(1048, activation='relu')): Añade una capa densa con 1048 neuronas y activación ReLU.
 model.add(Dropout(0.2)): Añade otra capa de dropout con la misma tasa.
 model.add(Dense(len(class_names), activation='softmax')): Añade la capa de salida con un número de neuronas igual al número de clases (categorías de imágenes) y activación softmax para obtener probabilidades de clasificación.
+
 ## 5. Compilación del Modelo
 model.compile(optimizer=Adam(), loss='categorical_crossentropy', metrics=['accuracy']): Compila el modelo usando el optimizador Adam, la función de pérdida categorical_crossentropy (adecuada para clasificación multiclase) y la métrica de precisión (accuracy).
 Resumen del Modelo
