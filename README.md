@@ -2,17 +2,21 @@
 ![image](https://github.com/natalialamia/GRUPO-18--ISPC--CIENTIFICO-DE-DATOS--2024/assets/107369842/cb2a96a1-437c-4f42-a194-835e62a3e009)
 
 # PROYECTO INTEGRADOR TSCDIA - GRUPO 18 - Cohorte 2022
+##Integrantes:
+### Viviana Farabollini
+### Mariano Ledesma
+### Natalia Lamia
 
 ## Proyecto App Información al Turista: ‘Muéstrame una Imagen y te diré dónde ir’
 
-### Objetivo del proyecto
+### 1. Objetivo del proyecto
 Se nos solicita desde una Agencia de Turismo el desarrollo de una aplicación para que, a partir de una imagen proporcionada por el usuario-turista, pueda sugerir un destino turístico en alguna de las regiones de Argentina. Las regiones consideradas son: Patagonia, Noroeste, Noreste, Cuyo, Buenos Aires y Córdoba.
 Requisitos del Negocio
 Proporcionar sugerencias precisas y confiables basadas en la imagen cargada por el usuario.
 Aumentar el interés y la interacción de los usuarios con la aplicación y los destinos turísticos ofrecidos.
 Mejorar la experiencia del cliente y facilitar la planificación de viajes.
 
-### Plan del Proyecto
+### 2. Plan del Proyecto
 Recolección y etiquetado de datos mediante scraping.
 Preparación de los datos para entrenamiento, validación y prueba.
 Construcción y entrenamiento de un modelo de redes neuronales convolucionales (CNN).
